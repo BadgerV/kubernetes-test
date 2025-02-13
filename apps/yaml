@@ -1,0 +1,6 @@
+my-gitops-repo/
+│── apps/
+│   ├── frontend.yaml
+│   ├── backend.yaml
+│   ├── database.yaml
+│── app-of-apps.yaml  <-- The parent application (manages all apps)
