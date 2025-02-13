@@ -1,0 +1,6 @@
+applications:
+  - name: my-app
+    namespace: argocd
+    repoURL: "https://github.com/BadgerV/kubernetes-test.git"
+    path: charts/myapp
+    targetRevision: "main"
