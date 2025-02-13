@@ -4,3 +4,6 @@ applications:
     repoURL: "https://github.com/BadgerV/kubernetes-test.git"
     path: charts/myapp
     targetRevision: "main"
+
+service:
+  port: 80  
