@@ -7,3 +7,7 @@ applications:
 
 service:
   port: 80  
+
+serviceAccount:
+  create: true  # Ensures the service account is created
+  name: "argocd-apps-sa"
