@@ -1,9 +1,0 @@
-applications:
-  - name: app1
-    repoURL: "https://github.com/BadgerV/kubernetes-test.git"
-    path: "k8s"
-    namespace: "app1"
-  - name: app2
-    repoURL: "https://github.com/BadgerV/kubernetes-test.git"
-    path: k8s
-    namespace: app2
