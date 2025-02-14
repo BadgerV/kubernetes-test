@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/BadgerV/kubernetes-test.git
+    targetRevision: main # Or a tag/commit
+    path: applications/nginx/helm-chart
+    helm:
+      values: | # Override values if needed (e.g., for different envs)
+        replicaCount: 1 # For dev environment
+        service:
+          type: LoadBalancer # For dev environment
+        name: my-nginx # Override the name
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: nginx-namespace # Create this namespace
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
