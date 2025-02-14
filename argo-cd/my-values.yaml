@@ -1,6 +1,0 @@
-server:
-  ingress:
-    enabled: true
-    hosts:
-      - host: argocd.local
-    ingressClassName: nginx
