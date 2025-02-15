@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/BadgerV/kubernetes-test.git
     targetRevision: master # Or a tag/commit
-    path: applications/nginx/helm-chart
+    path: nginx/nginx-chart
     helm:
       values: | # Override values if needed (e.g., for different envs)
         replicaCount: 1 # For dev environment
