@@ -10,7 +10,7 @@ spec:
     targetRevision: master # Or a tag/commit
     path: my-applications/applications/httpd
     helm:
-      values: 
+      valueFiles: 
         - values.yaml
   destination:
     server: https://kubernetes.default.svc
